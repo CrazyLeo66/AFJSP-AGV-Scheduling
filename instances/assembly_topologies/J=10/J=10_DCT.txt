@@ -1,0 +1,29 @@
+N_Jobs = 10
+Topology_Type = DCT
+Assembly_Jobs = 4
+Source_Jobs = 6
+Final_Job = 10
+Num_Edges = 9
+Max_Depth = 4
+Max_FanIn = 3
+Avg_FanIn = 2.250000
+Root_FanIn = 2
+
+### ASSEMBLY_LEVELS ###
+Level 0: J1 J2 J3 J4 J5 J6
+Level 1: J7 <- J1,J2
+Level 2: J8 <- J7,J3,J4
+Level 3: J9 <- J8,J5
+Level 4: J10 <- J9,J6
+
+### ASSEMBLY_TREE ###
+# Child  Parent
+1   7
+2   7
+7   8
+3   8
+4   8
+8   9
+5   9
+9   10
+6   10

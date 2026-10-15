@@ -1,0 +1,22 @@
+N_Jobs = 5
+Topology_Type = WBT
+Assembly_Jobs = 2
+Source_Jobs = 3
+Final_Job = 5
+Num_Edges = 4
+Max_Depth = 2
+Max_FanIn = 3
+Avg_FanIn = 2.000000
+Root_FanIn = 1
+
+### ASSEMBLY_LEVELS ###
+Level 0: J1 J2 J3
+Level 1: J4 <- J1,J2,J3
+Level 2: J5 <- J4
+
+### ASSEMBLY_TREE ###
+# Child  Parent
+1   4
+2   4
+3   4
+4   5

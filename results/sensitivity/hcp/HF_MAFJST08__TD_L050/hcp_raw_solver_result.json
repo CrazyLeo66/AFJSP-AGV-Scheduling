@@ -1,0 +1,813 @@
+{
+  "Meta_Data": {
+    "Instance": "HF_MAFJST08",
+    "Scale": "HF_MFJS",
+    "Solver": "Hierarchical OR-Tools CP-SAT",
+    "Algorithm": "Two-Stage Exact Decomposition: AFJSP first, AGV second",
+    "Phase2_Mode": "retime",
+    "Solve_Status": "OPTIMAL",
+    "Raw_CP_Status": "OPTIMAL",
+    "Time_Scale": 2,
+    "CP_WORKERS": 8,
+    "LINEARIZATION_LEVEL": 0,
+    "PRESOLVE": true,
+    "SYMMETRY_LEVEL": 2,
+    "RANDOM_SEED": 7,
+    "Num_Integer_Vars": 3061,
+    "Num_Continuous_Vars": 0,
+    "Num_Binary_Vars": 2710,
+    "Num_Constraints": 5388,
+    "Branches": 124,
+    "Conflicts": 0,
+    "Phase1_Solve_Status": "OPTIMAL",
+    "Phase1_Raw_CP_Status": "OPTIMAL",
+    "Phase1_Objective_Cmax": 2240.0,
+    "Phase1_Best_Bound": 2240.0,
+    "Phase1_Gap": 0.0,
+    "Phase1_Wall_Clock_Time_s": 0.103745,
+    "Phase1_Num_Integer_Vars": 159,
+    "Phase1_Num_Binary_Vars": 86,
+    "Phase1_Num_Constraints": 166,
+    "Phase2_Wall_Clock_Time_s": 0.622519,
+    "Phase2_Num_Integer_Vars": 2902,
+    "Phase2_Num_Binary_Vars": 2624,
+    "Phase2_Num_Constraints": 5222,
+    "Bound_Note": "Best_Bound/MIP_Gap/CP_Gap are for the Phase-2 fixed-assignment/fixed-order subproblem, not a global bound for the fully integrated problem."
+  },
+  "Metrics": {
+    "Objective_Cmax": 2291.0,
+    "Best_Bound": 2291.0,
+    "MIP_Gap": 0.0,
+    "CP_Gap": 0.0,
+    "Wall_Clock_Time_s": 0.726264,
+    "Total_Loaded_Trans_Time": 116.0,
+    "Total_Empty_Trans_Time": 42.5,
+    "Total_Trans_Time": 158.5,
+    "Active_AGVs": 3,
+    "Total_AGVs": 3
+  },
+  "Operations_Schedule": [
+    {
+      "Operation": "J2_O1",
+      "Machine": "M1",
+      "Sequence": 1,
+      "Start": 3.0,
+      "End": 217.0,
+      "Proc_Time": 214.0
+    },
+    {
+      "Operation": "J4_O1",
+      "Machine": "M1",
+      "Sequence": 2,
+      "Start": 217.0,
+      "End": 304.0,
+      "Proc_Time": 87.0
+    },
+    {
+      "Operation": "J3_O1",
+      "Machine": "M2",
+      "Sequence": 1,
+      "Start": 9.0,
+      "End": 71.0,
+      "Proc_Time": 62.0
+    },
+    {
+      "Operation": "J5_O1",
+      "Machine": "M2",
+      "Sequence": 2,
+      "Start": 71.0,
+      "End": 194.0,
+      "Proc_Time": 123.0
+    },
+    {
+      "Operation": "J2_O2",
+      "Machine": "M2",
+      "Sequence": 3,
+      "Start": 218.0,
+      "End": 284.0,
+      "Proc_Time": 66.0
+    },
+    {
+      "Operation": "J5_O3",
+      "Machine": "M2",
+      "Sequence": 4,
+      "Start": 319.0,
+      "End": 419.0,
+      "Proc_Time": 100.0
+    },
+    {
+      "Operation": "J6_O1",
+      "Machine": "M2",
+      "Sequence": 5,
+      "Start": 532.0,
+      "End": 677.0,
+      "Proc_Time": 145.0
+    },
+    {
+      "Operation": "J9_O1",
+      "Machine": "M2",
+      "Sequence": 6,
+      "Start": 1756.0,
+      "End": 1906.0,
+      "Proc_Time": 150.0
+    },
+    {
+      "Operation": "J1_O1",
+      "Machine": "M3",
+      "Sequence": 1,
+      "Start": 3.0,
+      "End": 103.0,
+      "Proc_Time": 100.0
+    },
+    {
+      "Operation": "J4_O2",
+      "Machine": "M3",
+      "Sequence": 2,
+      "Start": 308.0,
+      "End": 558.0,
+      "Proc_Time": 250.0
+    },
+    {
+      "Operation": "J6_O2",
+      "Machine": "M3",
+      "Sequence": 3,
+      "Start": 682.0,
+      "End": 805.0,
+      "Proc_Time": 123.0
+    },
+    {
+      "Operation": "J7_O1",
+      "Machine": "M3",
+      "Sequence": 4,
+      "Start": 874.0,
+      "End": 1019.0,
+      "Proc_Time": 145.0
+    },
+    {
+      "Operation": "J7_O2",
+      "Machine": "M3",
+      "Sequence": 5,
+      "Start": 1019.0,
+      "End": 1143.0,
+      "Proc_Time": 124.0
+    },
+    {
+      "Operation": "J9_O2",
+      "Machine": "M3",
+      "Sequence": 6,
+      "Start": 1911.0,
+      "End": 2091.0,
+      "Proc_Time": 180.0
+    },
+    {
+      "Operation": "J3_O2",
+      "Machine": "M4",
+      "Sequence": 1,
+      "Start": 75.0,
+      "End": 180.0,
+      "Proc_Time": 105.0
+    },
+    {
+      "Operation": "J1_O3",
+      "Machine": "M4",
+      "Sequence": 2,
+      "Start": 231.0,
+      "End": 381.0,
+      "Proc_Time": 150.0
+    },
+    {
+      "Operation": "J8_O1",
+      "Machine": "M4",
+      "Sequence": 3,
+      "Start": 982.0,
+      "End": 1227.0,
+      "Proc_Time": 245.0
+    },
+    {
+      "Operation": "J3_O3",
+      "Machine": "M5",
+      "Sequence": 1,
+      "Start": 183.0,
+      "End": 283.0,
+      "Proc_Time": 100.0
+    },
+    {
+      "Operation": "J2_O4",
+      "Machine": "M5",
+      "Sequence": 2,
+      "Start": 390.0,
+      "End": 510.0,
+      "Proc_Time": 120.0
+    },
+    {
+      "Operation": "J6_O3",
+      "Machine": "M5",
+      "Sequence": 3,
+      "Start": 809.0,
+      "End": 929.0,
+      "Proc_Time": 120.0
+    },
+    {
+      "Operation": "J7_O3",
+      "Machine": "M5",
+      "Sequence": 4,
+      "Start": 1147.0,
+      "End": 1292.0,
+      "Proc_Time": 145.0
+    },
+    {
+      "Operation": "J7_O4",
+      "Machine": "M5",
+      "Sequence": 5,
+      "Start": 1292.0,
+      "End": 1432.0,
+      "Proc_Time": 140.0
+    },
+    {
+      "Operation": "J8_O3",
+      "Machine": "M5",
+      "Sequence": 6,
+      "Start": 1458.0,
+      "End": 1603.0,
+      "Proc_Time": 145.0
+    },
+    {
+      "Operation": "J9_O3",
+      "Machine": "M5",
+      "Sequence": 7,
+      "Start": 2095.0,
+      "End": 2135.0,
+      "Proc_Time": 40.0
+    },
+    {
+      "Operation": "J2_O3",
+      "Machine": "M6",
+      "Sequence": 1,
+      "Start": 290.0,
+      "End": 385.0,
+      "Proc_Time": 95.0
+    },
+    {
+      "Operation": "J3_O4",
+      "Machine": "M6",
+      "Sequence": 2,
+      "Start": 385.0,
+      "End": 555.0,
+      "Proc_Time": 170.0
+    },
+    {
+      "Operation": "J4_O3",
+      "Machine": "M6",
+      "Sequence": 3,
+      "Start": 563.0,
+      "End": 699.0,
+      "Proc_Time": 136.0
+    },
+    {
+      "Operation": "J4_O4",
+      "Machine": "M6",
+      "Sequence": 4,
+      "Start": 699.0,
+      "End": 869.0,
+      "Proc_Time": 170.0
+    },
+    {
+      "Operation": "J8_O2",
+      "Machine": "M6",
+      "Sequence": 5,
+      "Start": 1231.0,
+      "End": 1455.0,
+      "Proc_Time": 224.0
+    },
+    {
+      "Operation": "J9_O4",
+      "Machine": "M6",
+      "Sequence": 6,
+      "Start": 2138.0,
+      "End": 2288.0,
+      "Proc_Time": 150.0
+    },
+    {
+      "Operation": "J1_O2",
+      "Machine": "M7",
+      "Sequence": 1,
+      "Start": 107.0,
+      "End": 230.0,
+      "Proc_Time": 123.0
+    },
+    {
+      "Operation": "J5_O2",
+      "Machine": "M7",
+      "Sequence": 2,
+      "Start": 230.0,
+      "End": 316.0,
+      "Proc_Time": 86.0
+    },
+    {
+      "Operation": "J6_O4",
+      "Machine": "M7",
+      "Sequence": 3,
+      "Start": 931.0,
+      "End": 981.0,
+      "Proc_Time": 50.0
+    },
+    {
+      "Operation": "J1_O4",
+      "Machine": "M8",
+      "Sequence": 1,
+      "Start": 385.0,
+      "End": 530.0,
+      "Proc_Time": 145.0
+    },
+    {
+      "Operation": "J5_O4",
+      "Machine": "M8",
+      "Sequence": 2,
+      "Start": 530.0,
+      "End": 695.0,
+      "Proc_Time": 165.0
+    },
+    {
+      "Operation": "J8_O4",
+      "Machine": "M8",
+      "Sequence": 3,
+      "Start": 1604.0,
+      "End": 1754.0,
+      "Proc_Time": 150.0
+    },
+    {
+      "Operation": "Start",
+      "Machine": "W",
+      "Sequence": 1,
+      "Start": 0.0,
+      "End": 0.0,
+      "Proc_Time": 0.0
+    },
+    {
+      "Operation": "End",
+      "Machine": "W",
+      "Sequence": 2,
+      "Start": 2291.0,
+      "End": 2291.0,
+      "Proc_Time": 0.0
+    }
+  ],
+  "AGV_Schedule": [
+    {
+      "Task": "J3_O4 -> J7_O1",
+      "From_Machine": "M6",
+      "To_Machine": "M3",
+      "PickUp_Time": 869.0,
+      "DropOff_Time": 874.0,
+      "Loaded_Dist": 5.0,
+      "Loaded_Time": 5.0,
+      "Prev_Empty_Dist": 6.0,
+      "Prev_Empty_Time": 3.0,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J6_O4 -> J8_O1",
+      "From_Machine": "M7",
+      "To_Machine": "M4",
+      "PickUp_Time": 981.0,
+      "DropOff_Time": 982.0,
+      "Loaded_Dist": 1.0,
+      "Loaded_Time": 1.0,
+      "Prev_Empty_Dist": 4.0,
+      "Prev_Empty_Time": 2.0,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J7_O2 -> J7_O3",
+      "From_Machine": "M3",
+      "To_Machine": "M5",
+      "PickUp_Time": 1143.0,
+      "DropOff_Time": 1147.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 3.0,
+      "Prev_Empty_Time": 1.5,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J8_O1 -> J8_O2",
+      "From_Machine": "M4",
+      "To_Machine": "M6",
+      "PickUp_Time": 1227.0,
+      "DropOff_Time": 1231.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 3.0,
+      "Prev_Empty_Time": 1.5,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J7_O4 -> J9_O1",
+      "From_Machine": "M5",
+      "To_Machine": "M2",
+      "PickUp_Time": 1432.0,
+      "DropOff_Time": 1433.0,
+      "Loaded_Dist": 1.0,
+      "Loaded_Time": 1.0,
+      "Prev_Empty_Dist": 3.0,
+      "Prev_Empty_Time": 1.5,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J8_O3 -> J8_O4",
+      "From_Machine": "M5",
+      "To_Machine": "M8",
+      "PickUp_Time": 1603.0,
+      "DropOff_Time": 1604.0,
+      "Loaded_Dist": 1.0,
+      "Loaded_Time": 1.0,
+      "Prev_Empty_Dist": 1.0,
+      "Prev_Empty_Time": 0.5,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J8_O4 -> J9_O1",
+      "From_Machine": "M8",
+      "To_Machine": "M2",
+      "PickUp_Time": 1754.0,
+      "DropOff_Time": 1756.0,
+      "Loaded_Dist": 2.0,
+      "Loaded_Time": 2.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J9_O1 -> J9_O2",
+      "From_Machine": "M2",
+      "To_Machine": "M3",
+      "PickUp_Time": 1906.0,
+      "DropOff_Time": 1911.0,
+      "Loaded_Dist": 5.0,
+      "Loaded_Time": 5.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J9_O2 -> J9_O3",
+      "From_Machine": "M3",
+      "To_Machine": "M5",
+      "PickUp_Time": 2091.0,
+      "DropOff_Time": 2095.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J9_O3 -> J9_O4",
+      "From_Machine": "M5",
+      "To_Machine": "M6",
+      "PickUp_Time": 2135.0,
+      "DropOff_Time": 2138.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "J9_O4 -> End",
+      "From_Machine": "M6",
+      "To_Machine": "W",
+      "PickUp_Time": 2288.0,
+      "DropOff_Time": 2291.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV1"
+    },
+    {
+      "Task": "Start -> J2_O1",
+      "From_Machine": "W",
+      "To_Machine": "M1",
+      "PickUp_Time": 0.0,
+      "DropOff_Time": 3.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "Start -> J3_O1",
+      "From_Machine": "W",
+      "To_Machine": "M2",
+      "PickUp_Time": 5.0,
+      "DropOff_Time": 9.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 4.0,
+      "Prev_Empty_Time": 2.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "Start -> J5_O1",
+      "From_Machine": "W",
+      "To_Machine": "M2",
+      "PickUp_Time": 57.0,
+      "DropOff_Time": 61.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 3.0,
+      "Prev_Empty_Time": 1.5,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "Start -> J4_O1",
+      "From_Machine": "W",
+      "To_Machine": "M1",
+      "PickUp_Time": 62.5,
+      "DropOff_Time": 65.5,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 3.0,
+      "Prev_Empty_Time": 1.5,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J3_O1 -> J3_O2",
+      "From_Machine": "M2",
+      "To_Machine": "M4",
+      "PickUp_Time": 71.0,
+      "DropOff_Time": 75.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 1.0,
+      "Prev_Empty_Time": 0.5,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J5_O1 -> J5_O2",
+      "From_Machine": "M2",
+      "To_Machine": "M7",
+      "PickUp_Time": 194.0,
+      "DropOff_Time": 197.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 2.0,
+      "Prev_Empty_Time": 1.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J2_O1 -> J2_O2",
+      "From_Machine": "M1",
+      "To_Machine": "M2",
+      "PickUp_Time": 217.0,
+      "DropOff_Time": 218.0,
+      "Loaded_Dist": 1.0,
+      "Loaded_Time": 1.0,
+      "Prev_Empty_Dist": 2.0,
+      "Prev_Empty_Time": 1.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J1_O2 -> J1_O3",
+      "From_Machine": "M7",
+      "To_Machine": "M4",
+      "PickUp_Time": 230.0,
+      "DropOff_Time": 231.0,
+      "Loaded_Dist": 1.0,
+      "Loaded_Time": 1.0,
+      "Prev_Empty_Dist": 3.0,
+      "Prev_Empty_Time": 1.5,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J3_O3 -> J3_O4",
+      "From_Machine": "M5",
+      "To_Machine": "M6",
+      "PickUp_Time": 283.0,
+      "DropOff_Time": 286.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 3.0,
+      "Prev_Empty_Time": 1.5,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J2_O2 -> J2_O3",
+      "From_Machine": "M2",
+      "To_Machine": "M6",
+      "PickUp_Time": 288.0,
+      "DropOff_Time": 290.0,
+      "Loaded_Dist": 2.0,
+      "Loaded_Time": 2.0,
+      "Prev_Empty_Dist": 4.0,
+      "Prev_Empty_Time": 2.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J4_O1 -> J4_O2",
+      "From_Machine": "M1",
+      "To_Machine": "M3",
+      "PickUp_Time": 304.0,
+      "DropOff_Time": 308.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 5.0,
+      "Prev_Empty_Time": 2.5,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J5_O2 -> J5_O3",
+      "From_Machine": "M7",
+      "To_Machine": "M2",
+      "PickUp_Time": 316.0,
+      "DropOff_Time": 319.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 4.0,
+      "Prev_Empty_Time": 2.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J1_O3 -> J1_O4",
+      "From_Machine": "M4",
+      "To_Machine": "M8",
+      "PickUp_Time": 381.0,
+      "DropOff_Time": 385.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 4.0,
+      "Prev_Empty_Time": 2.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J2_O3 -> J2_O4",
+      "From_Machine": "M6",
+      "To_Machine": "M5",
+      "PickUp_Time": 387.0,
+      "DropOff_Time": 390.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 4.0,
+      "Prev_Empty_Time": 2.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J4_O2 -> J4_O3",
+      "From_Machine": "M3",
+      "To_Machine": "M6",
+      "PickUp_Time": 558.0,
+      "DropOff_Time": 563.0,
+      "Loaded_Dist": 5.0,
+      "Loaded_Time": 5.0,
+      "Prev_Empty_Dist": 4.0,
+      "Prev_Empty_Time": 2.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "J5_O4 -> J8_O1",
+      "From_Machine": "M8",
+      "To_Machine": "M4",
+      "PickUp_Time": 695.0,
+      "DropOff_Time": 697.0,
+      "Loaded_Dist": 2.0,
+      "Loaded_Time": 2.0,
+      "Prev_Empty_Dist": 2.0,
+      "Prev_Empty_Time": 1.0,
+      "AGV": "AGV2"
+    },
+    {
+      "Task": "Start -> J1_O1",
+      "From_Machine": "W",
+      "To_Machine": "M3",
+      "PickUp_Time": 0.0,
+      "DropOff_Time": 3.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J1_O1 -> J1_O2",
+      "From_Machine": "M3",
+      "To_Machine": "M7",
+      "PickUp_Time": 103.0,
+      "DropOff_Time": 107.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J3_O2 -> J3_O3",
+      "From_Machine": "M4",
+      "To_Machine": "M5",
+      "PickUp_Time": 180.0,
+      "DropOff_Time": 183.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 1.0,
+      "Prev_Empty_Time": 0.5,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J5_O3 -> J5_O4",
+      "From_Machine": "M2",
+      "To_Machine": "M8",
+      "PickUp_Time": 419.0,
+      "DropOff_Time": 421.0,
+      "Loaded_Dist": 2.0,
+      "Loaded_Time": 2.0,
+      "Prev_Empty_Dist": 1.0,
+      "Prev_Empty_Time": 0.5,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J2_O4 -> J6_O1",
+      "From_Machine": "M5",
+      "To_Machine": "M2",
+      "PickUp_Time": 528.0,
+      "DropOff_Time": 529.0,
+      "Loaded_Dist": 1.0,
+      "Loaded_Time": 1.0,
+      "Prev_Empty_Dist": 1.0,
+      "Prev_Empty_Time": 0.5,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J1_O4 -> J6_O1",
+      "From_Machine": "M8",
+      "To_Machine": "M2",
+      "PickUp_Time": 530.0,
+      "DropOff_Time": 532.0,
+      "Loaded_Dist": 2.0,
+      "Loaded_Time": 2.0,
+      "Prev_Empty_Dist": 2.0,
+      "Prev_Empty_Time": 1.0,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J6_O1 -> J6_O2",
+      "From_Machine": "M2",
+      "To_Machine": "M3",
+      "PickUp_Time": 677.0,
+      "DropOff_Time": 682.0,
+      "Loaded_Dist": 5.0,
+      "Loaded_Time": 5.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J6_O2 -> J6_O3",
+      "From_Machine": "M3",
+      "To_Machine": "M5",
+      "PickUp_Time": 805.0,
+      "DropOff_Time": 809.0,
+      "Loaded_Dist": 4.0,
+      "Loaded_Time": 4.0,
+      "Prev_Empty_Dist": 0.0,
+      "Prev_Empty_Time": 0.0,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J4_O4 -> J7_O1",
+      "From_Machine": "M6",
+      "To_Machine": "M3",
+      "PickUp_Time": 869.0,
+      "DropOff_Time": 874.0,
+      "Loaded_Dist": 5.0,
+      "Loaded_Time": 5.0,
+      "Prev_Empty_Dist": 3.0,
+      "Prev_Empty_Time": 1.5,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J6_O3 -> J6_O4",
+      "From_Machine": "M5",
+      "To_Machine": "M7",
+      "PickUp_Time": 929.0,
+      "DropOff_Time": 931.0,
+      "Loaded_Dist": 2.0,
+      "Loaded_Time": 2.0,
+      "Prev_Empty_Dist": 4.0,
+      "Prev_Empty_Time": 2.0,
+      "AGV": "AGV3"
+    },
+    {
+      "Task": "J8_O2 -> J8_O3",
+      "From_Machine": "M6",
+      "To_Machine": "M5",
+      "PickUp_Time": 1455.0,
+      "DropOff_Time": 1458.0,
+      "Loaded_Dist": 3.0,
+      "Loaded_Time": 3.0,
+      "Prev_Empty_Dist": 5.0,
+      "Prev_Empty_Time": 2.5,
+      "AGV": "AGV3"
+    }
+  ]
+}

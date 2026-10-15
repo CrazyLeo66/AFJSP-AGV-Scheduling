@@ -1,0 +1,41 @@
+N_Jobs = 22
+Topology_Type = BT
+Assembly_Jobs = 9
+Source_Jobs = 13
+Final_Job = 22
+Num_Edges = 21
+Max_Depth = 4
+Max_FanIn = 3
+Avg_FanIn = 2.333333
+Root_FanIn = 2
+
+### ASSEMBLY_LEVELS ###
+Level 0: J1 J2 J3 J4 J5 J6 J7 J8 J9 J10 J11 J12 J13
+Level 1: J14 <- J1,J2,J3 ; J15 <- J4,J5,J6 ; J16 <- J7,J8,J9 ; J17 <- J10,J11 ; J18 <- J12,J13
+Level 2: J19 <- J14,J15 ; J20 <- J16,J17
+Level 3: J21 <- J18,J19
+Level 4: J22 <- J20,J21
+
+### ASSEMBLY_TREE ###
+# Child  Parent
+1   14
+2   14
+3   14
+4   15
+5   15
+6   15
+7   16
+8   16
+9   16
+10   17
+11   17
+12   18
+13   18
+14   19
+15   19
+16   20
+17   20
+18   21
+19   21
+20   22
+21   22

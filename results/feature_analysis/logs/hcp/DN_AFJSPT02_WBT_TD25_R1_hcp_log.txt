@@ -1,0 +1,42 @@
+Start_Time: 2026-06-20T04:28:32
+Instance_Index: 79/240
+Instance_Name: DN_AFJSPT02_WBT_TD25_R1
+Input_JSON_Path: LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\DN_AFJSPT02_WBT_TD25_R1.json
+Method: HCP
+Upper_Time_Limit_s: 900.0
+Lower_Time_Limit_s: 3599.986868
+Total_Time_Limit_s: 3600.0
+
+===== UPPER LOG =====
+Start_Time: 2026-06-20T04:28:32
+Instance_Index: 79/240
+Instance_Name: DN_AFJSPT02_WBT_TD25_R1
+Input_JSON_Path: LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\DN_AFJSPT02_WBT_TD25_R1.json
+Method: HCP Upper
+Command_Equivalent: CALL build_phase1_afjsp(input="LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\DN_AFJSPT02_WBT_TD25_R1.json", time_limit=900.0, workers=8)
+
+
+End_Time: 2026-06-20T04:28:32
+Upper_Status: OPTIMAL
+Upper_Runtime_s: 0.013132
+
+===== LOWER LOG =====
+Start_Time: 2026-06-20T04:28:32
+Instance_Index: 79/240
+Instance_Name: DN_AFJSPT02_WBT_TD25_R1
+Input_JSON_Path: LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\DN_AFJSPT02_WBT_TD25_R1.json
+Method: HCP Lower
+Upper_Runtime_s: 0.013132
+Lower_Time_Limit_s: 3599.986868
+Command_Equivalent: CALL build_phase2_agv_fixed_order(input="LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\DN_AFJSPT02_WBT_TD25_R1.json", phase1=actual_upper_solution, time_limit=3599.986868, workers=8, phase2_mode=retime)
+
+
+End_Time: 2026-06-20T04:28:32
+Lower_Status: OPTIMAL
+Lower_Runtime_s: 0.038544
+
+===== SUMMARY =====
+End_Time: 2026-06-20T04:28:32
+Status: OPTIMAL
+Total_Runtime_s: 0.051676
+Error_Message: 

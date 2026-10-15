@@ -1,0 +1,54 @@
+
+[2026-05-25 16:20:01] ERROR B_MK10_BT
+Source file: LOCAL_SOURCE\Desktop\Main_Instances\Main_Instance_JSON\Brandimarte\B_MK10_BT.json
+Traceback (most recent call last):
+  File "LOCAL_SOURCE\Desktop\Code\CP\run_cp_main_batch.py", line 296, in run_batch
+    existing_result = json.loads(output_json.read_text(encoding="utf-8"))
+  File "PYTHON_STDLIB\json\__init__.py", line 335, in loads
+    raise JSONDecodeError("Unexpected UTF-8 BOM (decode using utf-8-sig)",
+                          s, 0)
+json.decoder.JSONDecodeError: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+
+
+[2026-05-26 01:01:55] ERROR B_MK06_BT
+Source file: LOCAL_SOURCE\Desktop\Main_Instance_JSON\Brandimarte\B_MK06_BT.json
+Worker process exited with code 3221226505.
+
+[2026-05-26 03:03:50] ERROR B_MK09_BT
+Source file: LOCAL_SOURCE\Desktop\Main_Instance_JSON\Brandimarte\B_MK09_BT.json
+Worker process exited with code 3221226505.
+
+[2026-05-26 04:43:50] ERROR B_MK10_BT
+Source file: LOCAL_SOURCE\Desktop\Main_Instance_JSON\Brandimarte\B_MK10_BT.json
+TimeoutExpired: Command '['LOCAL_SOURCE\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe', 'LOCAL_SOURCE\\Desktop\\run_cp_rerun_source_batch.py', '--worker-single', '--input-json', 'LOCAL_SOURCE\\Desktop\\Main_Instance_JSON\\Brandimarte\\B_MK10_BT.json', '--output-json', 'LOCAL_SOURCE\\Desktop\\CP_Results_Main\\Details\\Brandimarte\\B_MK10_BT\\B_MK10_BT_cp_result.json', '--time-limit', '3600.0', '--workers', '8']' timed out after 6000.0 seconds
+Traceback (most recent call last):
+  File "LOCAL_SOURCE\Desktop\run_cp_rerun_source_batch.py", line 284, in run_batch
+    result, worker_error = solve_in_subprocess(Path(__file__).resolve(), item, args, logs_dir)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_SOURCE\Desktop\run_cp_rerun_source_batch.py", line 170, in solve_in_subprocess
+    completed = subprocess.run(cmd, stdout=out, stderr=err, timeout=timeout_s)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_SOURCE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_SOURCE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1228, in communicate
+    sts = self.wait(timeout=self._remaining_time(endtime))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_SOURCE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_SOURCE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 1593, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['LOCAL_SOURCE\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe', 'LOCAL_SOURCE\\Desktop\\run_cp_rerun_source_batch.py', '--worker-single', '--input-json', 'LOCAL_SOURCE\\Desktop\\Main_Instance_JSON\\Brandimarte\\B_MK10_BT.json', '--output-json', 'LOCAL_SOURCE\\Desktop\\CP_Results_Main\\Details\\Brandimarte\\B_MK10_BT\\B_MK10_BT_cp_result.json', '--time-limit', '3600.0', '--workers', '8']' timed out after 6000.0 seconds
+
+[2026-05-26 11:47:30] ERROR B_MK06_BT
+Source file: LOCAL_SOURCE\Desktop\Main_Instance_JSON\Brandimarte\B_MK06_BT.json
+Worker process exited with code 3221226505.
+
+[2026-05-26 12:04:01] ERROR B_MK09_BT
+Source file: LOCAL_SOURCE\Desktop\Main_Instance_JSON\Brandimarte\B_MK09_BT.json
+Worker process exited with code 3221226505.
+
+[2026-05-26 12:54:00] ERROR B_MK10_BT
+Source file: LOCAL_SOURCE\Desktop\Main_Instance_JSON\Brandimarte\B_MK10_BT.json
+solve_instance() returned None; CP-SAT did not produce a feasible solution.

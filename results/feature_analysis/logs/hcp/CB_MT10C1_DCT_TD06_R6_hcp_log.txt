@@ -1,0 +1,42 @@
+Start_Time: 2026-06-20T04:21:34
+Instance_Index: 6/240
+Instance_Name: CB_MT10C1_DCT_TD06_R6
+Input_JSON_Path: LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\CB_MT10C1_DCT_TD06_R6.json
+Method: HCP
+Upper_Time_Limit_s: 900.0
+Lower_Time_Limit_s: 3599.959989
+Total_Time_Limit_s: 3600.0
+
+===== UPPER LOG =====
+Start_Time: 2026-06-20T04:21:26
+Instance_Index: 6/240
+Instance_Name: CB_MT10C1_DCT_TD06_R6
+Input_JSON_Path: LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\CB_MT10C1_DCT_TD06_R6.json
+Method: HCP Upper
+Command_Equivalent: CALL build_phase1_afjsp(input="LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\CB_MT10C1_DCT_TD06_R6.json", time_limit=900.0, workers=8)
+
+
+End_Time: 2026-06-20T04:21:26
+Upper_Status: OPTIMAL
+Upper_Runtime_s: 0.040011
+
+===== LOWER LOG =====
+Start_Time: 2026-06-20T04:21:26
+Instance_Index: 6/240
+Instance_Name: CB_MT10C1_DCT_TD06_R6
+Input_JSON_Path: LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\CB_MT10C1_DCT_TD06_R6.json
+Method: HCP Lower
+Upper_Runtime_s: 0.040011
+Lower_Time_Limit_s: 3599.959989
+Command_Equivalent: CALL build_phase2_agv_fixed_order(input="LOCAL_SOURCE\Desktop\AS_NMLS_PlaneBalanced_Combined_240\AS_NMLS_PlaneBalanced_Combined_240\CB_MT10C1_DCT_TD06_R6.json", phase1=actual_upper_solution, time_limit=3599.959989, workers=8, phase2_mode=retime)
+
+
+End_Time: 2026-06-20T04:21:34
+Lower_Status: OPTIMAL
+Lower_Runtime_s: 7.098592
+
+===== SUMMARY =====
+End_Time: 2026-06-20T04:21:34
+Status: OPTIMAL
+Total_Runtime_s: 7.138603
+Error_Message: 

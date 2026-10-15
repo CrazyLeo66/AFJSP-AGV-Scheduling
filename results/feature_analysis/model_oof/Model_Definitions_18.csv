@@ -1,0 +1,19 @@
+Model,Model_Type,Base_Feature_Set,Specification,Number_of_Main_Effects,Number_of_Squared_Terms,Number_of_Interactions,Number_of_Predictor_Terms
+M1,Linear,AS,RD ~ AS,1,0,0,1
+M2,Linear,NMLS,RD ~ NMLS,1,0,0,1
+M3,Linear,AS + NMLS,RD ~ AS + NMLS,2,0,0,2
+M4,Linear,AS + AOS,RD ~ AS + AOS,2,0,0,2
+M5,Linear,AS + AED,RD ~ AS + AED,2,0,0,2
+M6,Linear,NMLS + AED,RD ~ NMLS + AED,2,0,0,2
+M7,Linear,NMLS + AOS,RD ~ NMLS + AOS,2,0,0,2
+M8,Linear,AS + NMLS + AED,RD ~ AS + NMLS + AED,3,0,0,3
+M9,Linear,AS + NMLS + AOS,RD ~ AS + NMLS + AOS,3,0,0,3
+Q1,Quadratic,AS,RD ~ AS + AS^2,1,1,0,2
+Q2,Quadratic,NMLS,RD ~ NMLS + NMLS^2,1,1,0,2
+Q3,Quadratic,AS + NMLS,RD ~ AS + NMLS + AS^2 + NMLS^2 + AS:NMLS,2,2,1,5
+Q4,Quadratic,AS + AOS,RD ~ AS + AOS + AS^2 + AOS^2 + AS:AOS,2,2,1,5
+Q5,Quadratic,AS + AED,RD ~ AS + AED + AS^2 + AED^2 + AS:AED,2,2,1,5
+Q6,Quadratic,NMLS + AED,RD ~ NMLS + AED + NMLS^2 + AED^2 + NMLS:AED,2,2,1,5
+Q7,Quadratic,NMLS + AOS,RD ~ NMLS + AOS + NMLS^2 + AOS^2 + NMLS:AOS,2,2,1,5
+Q8,Quadratic,AS + NMLS + AED,RD ~ AS + NMLS + AED + AS^2 + NMLS^2 + AED^2 + AS:NMLS + AS:AED + NMLS:AED,3,3,3,9
+Q9,Quadratic,AS + NMLS + AOS,RD ~ AS + NMLS + AOS + AS^2 + NMLS^2 + AOS^2 + AS:NMLS + AS:AOS + NMLS:AOS,3,3,3,9
